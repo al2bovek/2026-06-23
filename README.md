@@ -1,4 +1,6 @@
-# 2026-06-23
+Project scaffold
+
+```
 project/
 ├── .gitignore
 ├── README.md
@@ -56,3 +58,25 @@ project/
         │                          SearchBar, ConfirmDialog)
         └── pages/                (Home, ItemDetails, Categories,
                                    Login, Register, NotFound)
+```
+
+## Features included
+- **Auth**: register / login / logout / me — JWT in httpOnly cookie, argon2 hashing.
+- **Categories**: full CRUD (protected). Deleting a category cascades to its items.
+- **Items**: full CRUD (protected) with image URL, rating, free/paid flag.
+- **Filters**: by category, type, free/paid, rating min/max.
+- **Search**: by name (debounced, ILIKE).
+- **Item details** page (`Read more` button).
+- **Responsive grid**: 1 col mobile → 2 col tablet → 3 col desktop.
+- **Validation**: server-side via `express-validator`, client-side via `react-hook-form`.
+- **Neutral naming**: `categories` / `items` — no hardcoded city or place names.
+- **Dev Docker**: one command (`docker compose -f docker-compose.dev.yml up --build`).
+- **Render.com**: `render.yaml` declares DB + Node web service + static client.
+
+## To run locally
+
+cd /app/project
+docker compose -f docker-compose.dev.yml up --build
+
+Then open http://localhost:5173 — register an account and start managing items.
+# project-o6
