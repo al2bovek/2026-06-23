@@ -1,0 +1,22 @@
+meta {
+  name: logout
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:3000/api/auth/logout
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "email@mail.com",
+    "password": "email_email"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
