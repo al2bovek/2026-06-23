@@ -79,4 +79,4 @@ cd /app/project
 docker compose -f docker-compose.dev.yml up --build
 
 Then open http://localhost:5173 — register an account and start managing items.
-# project-o6
+# project 2026 06 23
