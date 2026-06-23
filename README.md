@@ -63,8 +63,8 @@ project/
 ## Features included
 - **Auth**: register / login / logout / me — JWT in httpOnly cookie, argon2 hashing.
 - **Categories**: full CRUD (protected). Deleting a category cascades to its items.
-- **Items**: full CRUD (protected) with image URL, rating, free/paid flag.
-- **Filters**: by category, type, free/paid, rating min/max.
+- **Items**: full CRUD (protected) with image URL, rating, free/course flag.
+- **Filters**: by category, type, free/course, rating min/max.
 - **Search**: by name (debounced, ILIKE).
 - **Item details** page (`Read more` button).
 - **Responsive grid**: 1 col mobile → 2 col tablet → 3 col desktop.
